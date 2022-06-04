@@ -25,4 +25,9 @@ public class HelloWorldApplication {
 		return "Be ready for the test!";
 	}
 
+  @RequestMapping("/name")
+  public String name(){
+  return "JohnCarter Gonzalez";
+  }
+
 }
