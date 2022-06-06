@@ -8,14 +8,14 @@
 		<version>2.7.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.johncartergonzalez</groupId>
-	<artifactId>HelloWorld</artifactId>
+	<groupId>com.jspdemo</groupId>
+	<artifactId>jsppages</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>HelloWorld</name>
-	<description>First Java Program</description>
+	<name>jsppages</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -40,9 +40,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-                <groupId>org.apache.tomcat.embed</groupId>
-                <artifactId>tomcat-embed-jasper</artifactId>
-        </dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+	</dependency>
 	</dependencies>
 
 	<build>
