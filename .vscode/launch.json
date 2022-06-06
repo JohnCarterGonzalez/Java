@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CafeJava",
+            "request": "launch",
+            "mainClass": "CafeJava"
+        },
+        {
+            "type": "java",
             "name": "Launch PlusMinus",
             "request": "launch",
             "mainClass": "PlusMinus"
