@@ -29,12 +29,33 @@ public class TestCafe {
         // menu.add("mocha");
         // appTest.displayMenu(menu);
     
-        System.out.println("\n----- Add Customer Test-----");
-        ArrayList<String> customers = new ArrayList<String>();
+        // System.out.println("\n----- Add Customer Test-----");
+        // ArrayList<String> customers = new ArrayList<String>();
         // --- Test 4 times ---
-        for (int i = 0; i < 4; i++) {
-             appTest.addCustomer(customers);
-             System.out.println("\n");
-         }
+        // for (int i = 0; i < 4; i++) {
+             // appTest.addCustomer(customers);
+             // System.out.println("\n");
+         // }
+    /* 
+        System.out.println("\n----- Add Customers Test-----");
+        ArrayList<String> customers = new ArrayList<String>();
+        //while loop
+        while (true) {
+            appTest.addCustomers(customers);
+            System.out.println("\n");
+            System.out.println("Are you sure you want to quit? (Enter a name or 'q' for quit)");
+            String userInput = System.console().readLine();
+            if (userInput.equals("q")) {
+                //print out the total added customers in the console and their names
+                System.out.println("\n");
+                System.out.println("Total customers added: " + customers.size());
+                System.out.println("You have added: " + customers);
+                break;
+            }
+        }
+        */
+        System.out.println("/n----- Price Chart Test-----");
+        appTest.printPriceChart("Coffee", 3.5, 4);
+
     }
 }

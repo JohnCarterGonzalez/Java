@@ -46,4 +46,29 @@ public class CafeUtil {
         System.out.println(customers);
     }
 
+    //implement addCustomers, make a method where an user can enter multiple customers and add them to the list
+    //use a while loop and ask the user to type "q" when they are finished entering names
+    public void addCustomers(ArrayList<String> customers) {
+        System.out.println("Please enter a customer: ");
+        String customerName = System.console().readLine();
+        while (!customerName.equals("q")) {
+            customers.add(customerName);
+            System.out.println("Please enter your name: ");
+            customerName = System.console().readLine();
+        }
+    }
+
+    //void printPriceChart(String product, double price, int maxQuantity)
+    // given a product, price, and maxQuantity, print a price chart for the product that shows the price for each quantity
+    // formats the prices as currency 
+    // takes .50 more off the original price ever time the quantity increases 
+    void printPriceChart(String product, double price, int maxQuantity) {
+        System.out.println("Price Chart for " + product);
+        for (int i = 1; i <= maxQuantity; i++) {
+            System.out.printf("%d: $%.2f\n", i, price);
+            price -= 0.50;
+        }
+
+    }
+
 }
