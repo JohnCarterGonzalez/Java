@@ -4,7 +4,7 @@ import java.util.List;
 
 public class CafeUtil {
     //reward system for customers. calculats how many drinks they need after 10 weeks
-    // write a method that sums together ever consecutive integer from 1 to 10 and returns the sum
+    // write a method that sums together ever consecutive integer from 1 to 10 and returns the sum and allows for the admin to modulate the weeks
     public int getStreakGoal(int numWeeks) {
         int sum = 0;
         for (int i = 1; i <= numWeeks; i++) {
