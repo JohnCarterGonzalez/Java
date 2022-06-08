@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class CafeUtil {
-    //reward system for customers. calculats how many drinks they need after 10 weeks
+    //reward system for customers. calculates how many drinks they need after 10 weeks
     // write a method that sums together ever consecutive integer from 1 to 10 and returns the sum
     public int getStreakGoal(int numWeeks) {
         int sum = 0;

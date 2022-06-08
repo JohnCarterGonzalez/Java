@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestPuzzleJava",
+            "request": "launch",
+            "mainClass": "TestPuzzleJava"
+        },
+        {
+            "type": "java",
             "name": "Launch TestCafe",
             "request": "launch",
             "mainClass": "TestCafe"
