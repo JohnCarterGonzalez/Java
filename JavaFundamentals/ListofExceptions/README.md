@@ -1,0 +1,3 @@
+Objectives:
+
+● Implement exception handling
