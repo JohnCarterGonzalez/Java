@@ -16,10 +16,6 @@ public class TestOrders {
         latte.name = "latte";
         latte.price = 4.00;
 
-        Items dripCoffe = new Items();
-        dripCoffe.name = "Drip Coffe";
-        dripCoffe.price = 5.00;
-
         Items cappuccino = new Items();
         cappuccino.name = "cappuccino";
         cappuccino.price = 3.00;
