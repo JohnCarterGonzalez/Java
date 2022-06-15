@@ -1,8 +1,7 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Order {
-    private ArrayList<OrderItem> items = new ArrayList<>();
+    private ArrayList<Item> items = new ArrayList<Item>();
     private boolean ready;
     private String name;
 
@@ -12,7 +11,9 @@ public class Order {
     }
 
     public Order(String name) {
-       return this.name = name;
+       this.name = name;
+       this.ready = false;
+
     }
 
     public String getName() {
@@ -31,15 +32,15 @@ public class Order {
 	    this.ready = ready;
    }
 
-   public ArrayList<OrderItem> getItems() {
+   public ArrayList<Item> getItems() {
       return items;
    }
 
-    public void setItems(ArrayList<OrderItem> items) {
+    public void setItems(ArrayList<Item> items) {
          this.items = items;
    }
 
-    public void addItem(OrderItem items) {
+    public void addItem(Item items) {
 	   this.items.add(items);
    }
 
@@ -58,7 +59,7 @@ public class Order {
    //getOrderTotal, creates a method that sums together each of the item's prices and returns the total amount
    public double getOrderTotal() {
 	   double total = 0;
-	   for (OrderItem item : this.items) {
+	   for (Item item : this.items) {
 		   total += item.getPrice();
 	   }
 	   return total;
@@ -67,7 +68,7 @@ public class Order {
    //method called "display" that prints out the order information
    public void display() {
 	   System.out.println("Order for " + name);
-	   for (OrderItem item : items) {
+	   for (Item item : items) {
 		   System.out.println(item.getName() + ": $" + item.getPrice());
 	   }
 	   System.out.println("Total: $" + this.getOrderTotal());

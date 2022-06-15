@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class BaristaTest {
 	public static void main(String[] args) {
@@ -48,15 +47,7 @@ public class BaristaTest {
 		System.out.println(order2.getStatusMessage());
 		
 		System.out.println(order1.getOrderTotal());
-
 	}	
-
-
-
-
-
-
-
 }
 
 
