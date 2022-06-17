@@ -2,6 +2,9 @@ import Mammal.Mammal;
 
 public class GiantBat {
     Mammal mammal = new Mammal();
+    public Bat(){
+        super(300);
+    }
 
     public void fly() {
         mammal.energyLevel -= 50;
