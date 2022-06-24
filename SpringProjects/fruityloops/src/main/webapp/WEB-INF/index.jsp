@@ -12,12 +12,11 @@
 <!-- For any Bootstrap that uses JS or jQuery-->
 <script src="/webjars/jquery/jquery.min.js"></script>
 <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<!-- JSP Standard Library Tag -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 </head>
 <body>
-	<div class ="container">
-	<a href ="/date">Date Template</a>
-	<a href ="/time">Time Template</a>
-	</div>
+	
 </body>
 </html>
